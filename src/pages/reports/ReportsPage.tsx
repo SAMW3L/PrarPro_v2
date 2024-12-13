@@ -188,6 +188,12 @@ export default function ReportsPage() {
             data: [''],
             columns: ['Item Name','Initial Balance','Current Balance','Item Category','Item Price']
           };
+          case 'customers':
+            return {
+              title: 'Customer Report',
+              data: [],
+              columns: ['Receipt No', 'Date', 'Customer Name', 'Phone Number', 'Items', 'Total Amount', 'Payment Method', 'Served By', 'Actions']
+            };
       default:
         return {
           title: 'No Data',
